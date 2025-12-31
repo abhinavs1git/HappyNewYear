@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specially For You!!!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Nunito:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['"Mountains of Christmas"', 'cursive'],
+                        hand: ['"Dancing Script"', 'cursive'],
+                        sans: ['"Nunito"', 'sans-serif'],
+                    },
+                    animation: {
+                        'bounce-in': 'bounceIn 1s ease-out',
+                        'spin-slow': 'spin 4s linear infinite',
+                    },
+                    keyframes: {
+                        bounceIn: {
+                            '0%': { transform: 'scale(0.3)', opacity: '0' },
+                            '50%': { transform: 'scale(1.05)' },
+                            '70%': { transform: 'scale(0.9)' },
+                            '100%': { transform: 'scale(1)', opacity: '1' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background layers -->
+    <div class="stars-bg"></div>
+    <div class="snow-overlay"></div>
+    <div class="grid-paper"></div>
+    <div class="floating-hearts"></div>
+    <!-- Main app container -->
+    <div class="app main-light">
+        <div class="page-container">
+            <div id="app" class="flex flex-col items-center justify-center min-h-screen w-full text-center"></div>
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
